@@ -15,8 +15,7 @@
                             </div>
                         </div>
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="Email" #Email="ngModel"
-                            [(ngModel)]="email" placeholder="Email" required>
+                        <input type="text" class="form-control" name="EmailId" #Email="ngModel" [ngModel] placeholder="Email" required>
                     </div>
 
                     <div class="form-group">
@@ -25,8 +24,8 @@
                             Password is required.
                         </div>
                         <label for="Password">Password</label>
-                        <input type="password" class="form-control" name="Password" #Password="ngModel"
-                            [(ngModel)]="password" placeholder="Passsword" required>
+                        <input type="password" class="form-control" name="Password" #Password="ngModel" [ngModel] placeholder="Passsword"
+                            required>
                     </div>
 
                     <div class="form-group">

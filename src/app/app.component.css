@@ -1,8 +1,7 @@
 .bg-image {
-    min-height         : 51em !important;
+    min-height         : 40rem !important;
     background-size    : cover;
     width              : auto;
-    background-image   : url('../assets/images/main.jpg');
     background-position: 50% 50%;
 }
 

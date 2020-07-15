@@ -8,18 +8,16 @@ import { HttpErrorResponse } from '@angular/common/http';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: []
 })
 export class LoginComponent{
-    email: string = '';
-    password: string = '';
     isLoginError: boolean = false;
   
   
     constructor(private userService: UserService, private router: Router) { }
   
     login(form: NgForm) {
-      const user: ILoginModel = { EmailId: this.email, Password: this.password };
+      const user: ILoginModel = form.value;
       this.userService.userLogin(user).subscribe((response: IResponse) => {
         localStorage.setItem('bearerTokenCox', response.token);
         this.userService.setIsLoggedInObserver(true);
