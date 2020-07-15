@@ -1,0 +1,13 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-5">
+        <div class="card text-white bg-secondary">
+            <h3 class="card-header" style="text-align: center;">Dashboard Data</h3>
+            <div *ngIf="dashboardData" class="card-body p-5">
+                <div>Id: {{dashboardData.id}}</div>
+                <div>Name: {{dashboardData.name}}</div>
+                <div>EmailId: {{dashboardData.emailId}}</div>
+                <div>Phone: {{dashboardData.phone}}</div>
+            </div>
+        </div>
+    </div>
+</div>
